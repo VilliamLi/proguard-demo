@@ -4,11 +4,13 @@ import lombok.Builder;
 import lombok.Data;
 
 /**
- * Created by seregaSLM on 07.07.2017.
+ * @author villiam
+ *
+ * @date 2020-11-14
  */
 @Data
 @Builder
-public class ExampleDto {
+public class TestDto {
     private String variableString;
     private int variableInt;
     private Object variableObject;

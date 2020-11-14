@@ -60,6 +60,19 @@
                     <options>
                         <option>-dontshrink</option>
                         <option>-dontoptimize</option>
+
+                        <!-- 优化时允许访问并修改有修饰符的类和类的成员 -->
+                        <option>-allowaccessmodification</option>
+
+                        <!-- 确定统一的混淆类的成员名称来增加混淆-->
+                        <option>-useuniqueclassmembernames</option>
+
+                        <!-- 不混淆所有包名-->
+                        <option>-keeppackagenames</option>
+                        <option>-keepdirectories</option>
+                        <option>-dontnote javax.annotation.*</option>
+                        <option>-dontnote org.apache.logging.log4j.util.*</option>
+                        <option>-dontnote module-info</option>
                         <!-- This option will replace all strings in reflections method invocations with new class names.
                              For example, invokes Class.forName('className')-->
                         <option>-adaptclassstrings</option>
@@ -103,7 +116,7 @@
                     <injarNotExistsSkip>true</injarNotExistsSkip>
                     <libs>
                         <!--Put here your libraries if required-->
-                        <!--<lib>${java.home}/lib/rt.jar</lib>-->
+                        <lib>/Library/Java/JavaVirtualMachines/jdk1.8.0_251.jdk/Contents/Home/jre/lib/rt.jar</lib>
                     </libs>
                 </configuration>
                 <dependencies>

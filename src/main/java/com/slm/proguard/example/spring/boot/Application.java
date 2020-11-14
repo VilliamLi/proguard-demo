@@ -2,16 +2,17 @@ package com.slm.proguard.example.spring.boot;
 
 import com.slm.proguard.example.spring.boot.service.ExampleService;
 import lombok.AllArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import javax.annotation.PostConstruct;
 
 /**
- * Created by seregaSLM on 07.07.2017.
+ * @author villiam
+ *
+ * @date 2020-11-14
  */
-@Slf4j
+
 @AllArgsConstructor
 @SpringBootApplication
 public class Application {
@@ -23,12 +24,9 @@ public class Application {
 
     @PostConstruct
     public void testOutput() {
-        LOGGER.info("#");
-        LOGGER.info("###");
-        LOGGER.info("##################################### Test Output ##################################");
-        LOGGER.info("{}", exampleService.calculate());
-        LOGGER.info("####################################################################################");
-        LOGGER.info("###");
-        LOGGER.info("#");
+        System.out.println("#");
+        System.out.println("###");
+        System.out.println("##################################### Test Output ##################################");
+        System.out.println("{}"+exampleService.calculate());
     }
 }
