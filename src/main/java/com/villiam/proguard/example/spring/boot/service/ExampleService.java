@@ -1,6 +1,6 @@
-package com.slm.proguard.example.spring.boot.service;
+package com.villiam.proguard.example.spring.boot.service;
 
-import com.slm.proguard.example.spring.boot.dto.TestDto;
+import com.villiam.proguard.example.spring.boot.dto.TestDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

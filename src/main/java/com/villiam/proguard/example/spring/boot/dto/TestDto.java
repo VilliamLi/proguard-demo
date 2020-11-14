@@ -1,4 +1,4 @@
-package com.slm.proguard.example.spring.boot.dto;
+package com.villiam.proguard.example.spring.boot.dto;
 
 import lombok.Builder;
 import lombok.Data;

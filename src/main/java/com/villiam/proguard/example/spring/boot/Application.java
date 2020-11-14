@@ -1,6 +1,6 @@
-package com.slm.proguard.example.spring.boot;
+package com.villiam.proguard.example.spring.boot;
 
-import com.slm.proguard.example.spring.boot.service.ExampleService;
+import com.villiam.proguard.example.spring.boot.service.ExampleService;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
